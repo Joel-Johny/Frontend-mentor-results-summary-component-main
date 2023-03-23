@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    font-family: "Hanken Grotesk";
+    background-color: white;
+}
+
+
+.card{
+    width:630px;
+    height: 410px;
+    display:flex;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.title{
+    margin-bottom : 1.5rem
+    
+}
+.result{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:2rem;
+    border-radius: 20px;
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    color: hsl(241, 100%, 89%)
+
+}
+
+.score{
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    width:160px;
+    height:160px;
+    border-radius: 50%;
+    margin-bottom : 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: hsl(221, 100%, 96%)
+
+}
+.marks{
+    font-size:3rem;
+    color: white;
+}
+.total{
+    color:hsl(241, 100%, 89%);
+    font-size:16px
+}
+p{
+    font-size: 18px;
+}
+
+.comment{
+    margin-bottom : 1rem;
+    color: white;
+}
+.stats{
+    text-align: center;
+    
+}
+
+
+
+
+.summary{
+    width:50%;
+    padding:2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.title2{
+    margin-bottom: 1rem;
+}
+
+.performance{
+    margin-bottom: 1rem;
+}
+
+
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    height: 35px;
+    padding: 0.5rem;
+    /* added paddinf attr to get manual spacing around edges usually used with space-between */
+    
+}
+.svg{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    /* added gap attr to get manual spacing b/w flex-items */
+}
+
+.btn{
+    height: 50px;    
+    border-radius: 25px;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    font-size: medium;
+}
+
+.r-background{
+    background-color: hsla(0, 100%, 67%,0.1);
+    color: hsl(0, 100%, 67%);
+}
+
+.y-background{
+    background-color: hsla(39, 100%, 56%,0.1);
+    color: hsl(39, 100%, 56%);
+}
+
+.g-background{
+    background-color: hsla(166, 100%, 37%,0.1);
+    color: hsl(166, 100%, 37%);
+}
+
+.b-background{
+    background-color: hsla(234, 85%, 45%,0.1);
+    color: hsl(234, 85%, 45%);
+}
+/* mobile view */
+
+@media screen and (max-width:600px) {
+    .card{
+        width:100%;
+        height: 100%;
+        flex-direction: column;
+        
+    }
+
+    .result{
+        width: 100%;
+        border-top-right-radius:0 ;
+        border-top-left-radius:0 ;
+    }
+    .summary{
+        width: 100%;
+    }
+}
